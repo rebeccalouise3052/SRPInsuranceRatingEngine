@@ -58,7 +58,7 @@ namespace ArdalisRating
                         Console.WriteLine("Insufficient bond amount.");
                         return;
                     }
-                    Rating = policy.BondAmount * 0.05m;
+                    else Rating = policy.BondAmount * 0.05m;
                     break;
 
                 case PolicyType.Life:

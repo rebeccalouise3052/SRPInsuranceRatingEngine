@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using Rating.Interfaces;
 
-namespace Rating
+namespace Rating.Logging
 {
-    // Simple console logger that satisfies ILogger.
-    // This will be refactored later into a dedicated Logger folder.
+    // ConsoleLogger prints log messages directly to the console.
+    // This satisfies ILogger and keeps logging separate from business logic.
     public class ConsoleLogger : ILogger
     {
         public void Log(string message)
